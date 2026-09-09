@@ -5,8 +5,7 @@ export default function FinalCta({ onOpenModal }) {
     <section className="cta-final">
       <h2>Get the files</h2>
       <p className="section-sub">
-        Includes <code>manifest.json</code>, <code>background.js</code>, <code>content.js</code>,
-        the popup, and a full <code>README.md</code> covering the same detail as this page.
+        Includes <code>README.md</code> covering the details on how to upload extension to chrome extension.
       </p>
       <a
         className="btn btn-primary"
