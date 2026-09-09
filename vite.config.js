@@ -7,5 +7,5 @@ import react from "@vitejs/plugin-react";
 // root), leave this as "/".
 export default defineConfig({
   plugins: [react()],
-  base: "/",
+  base: "/Ad-Compromizer_Site/",
 });
