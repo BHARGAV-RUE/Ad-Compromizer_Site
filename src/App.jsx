@@ -9,6 +9,7 @@ import FinalCta from "./components/FinalCta.jsx";
 import Footer from "./components/Footer.jsx";
 import DownloadModal from "./components/DownloadModal.jsx";
 import AdSlot from "./components/AdSlot.jsx";
+import InContentAd from "./components/InContentAd.jsx";
 import { ZIP_BASE64, ZIP_FILENAME } from "./data/zipData.js";
 
 function triggerDownload() {
@@ -37,10 +38,13 @@ export default function App() {
 
         <main className="wrap">
           <Hero zipSizeLabel={zipSizeLabel} onOpenModal={() => setModalOpen(true)} />
+          <InContentAd />
           <WhatSection />
           <InstallSection />
+          <InContentAd />
           <UseSection />
           <PrivacySection />
+          <InContentAd />
           <FinalCta onOpenModal={() => setModalOpen(true)} />
           <Footer />
         </main>

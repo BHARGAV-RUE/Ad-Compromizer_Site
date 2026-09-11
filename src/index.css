@@ -583,3 +583,25 @@ footer{padding:44px 0 40px;}
   html{scroll-behavior:auto;}
   .btn, .modal, .modal-overlay, .nav-links, .flow-step{transition:none;}
 }
+
+/* ---------- in-content ad (mobile/tablet — replaces side rails) ---------- */
+.in-content-ad{
+  display:none;
+  width:100%;
+  max-width:300px;
+  height:250px;
+  margin:32px auto;
+  border:1px dashed var(--border);
+  border-radius:12px;
+  background:var(--surface);
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:6px;
+  color:var(--muted-2);
+}
+
+/* Same breakpoint where the side rails disappear — this fills the gap */
+@media (max-width:1099px){
+  .in-content-ad{display:flex;}
+}
